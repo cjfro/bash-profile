@@ -14,6 +14,10 @@ if [ -f /etc/bash_completion.d/git-completion.bash ]; then
     . /etc/bash_completion.d/git-completion.bash;
 fi
 
+### quick-alias (https://github.com/cjfro/quick-alias) ###
+
+alias make-alias='history | quick-alias $1'
+
 ### git styling ###
 
 export GIT_PS1_SHOWDIRTYSTATE=1
